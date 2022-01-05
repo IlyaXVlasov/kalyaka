@@ -23,4 +23,4 @@ Notepad ++ Sublime Text
 **Figma**
 
 - [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=6%3A898)
-- [Ссылка на сайт]()
+- [Ссылка на сайт](https://ilyaxvlasov.github.io/kalyaka/.)
