@@ -1,0 +1,130 @@
+.card {
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto 0 auto;
+
+  @media screen and (max-width: 768px) {
+    max-width: fit-content;
+  }
+
+  @media screen and (max-width: 525px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (max-width: 330px) {
+    flex-direction: row;
+  }
+
+  &__container {
+    display: flex;
+    max-width: 100%;
+    @media screen and (max-width: 525px) {
+      max-width: none;
+      display: flex;
+      width: 300px;
+      height: 284px;
+      overflow: hidden;
+    }
+  }
+  &__slider {
+    display: flex;
+    max-width: 100%;
+    @media screen and (max-width: 525px) {
+      max-width: none;
+    }
+  }
+
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 308px;
+    background: #f8f8f8;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 10px;
+      width: 349px;
+      height: 284px;
+    }
+  }
+
+  @media screen and (max-width: 525px) {
+    width: 300px;
+    margin: 0;
+  }
+}
+&__cell:last-child {
+  margin: 0;
+}
+&__type_disappeared {
+  @media screen and (max-width: 525px) {
+    display: none;
+  }
+  @media screen and (max-width: 525px) {
+    display: block;
+  }
+}
+
+&__small-title {
+  @include font(normal, 500, 18px, 20px);
+  color: rgba(17, 17, 17, 0.6);
+  margin: 40px 0px 0px 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    margin: 30px 0px 0px 30px;
+  }
+  @media screen and (max-width: 525px) {
+    margin: 20px 0px 0px 20px;
+  }
+}
+&__heading {
+  width: fit-content;
+  @include font(normal, 600, 32px, 38px);
+  color: #111111;
+  margin: 20px 0px 0px 39px;
+
+  @media screen and (max-width: 768px) {
+    margin: 12px 0px 0px 30px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  @media screen and (max-width: 525px) {
+    margin-left: 20px;
+  }
+}
+&__heading:nth-child(2n) {
+  padding-right: 40px;
+}
+&__text {
+  @include font(normal, 400, 16px, 24px);
+  color: rgba(17, 17, 17, 0.6);
+  margin: 40px 0px 0px 40px;
+
+  @media screen and (max-width: 768px) {
+    margin: 50px 0px 0px 30px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  @media screen and (max-width: 525px) {
+    margin: 50px 0px 0px 20px;
+  }
+}
+
+&__carusel {
+  display: flex;
+  max-width: 100%;
+  @media screen and (max-width: 525px) {
+    max-width: none;
+  }
+}
+
+&__animations {
+  @media screen and (max-width: 525px) {
+    transition: 0.4s all ease-in-out;
+  }
+}

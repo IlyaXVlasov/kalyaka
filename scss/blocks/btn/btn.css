@@ -1,0 +1,52 @@
+.btn {
+  display: none;
+}
+@media screen and (max-width: 320px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 4px 0px 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn__radio {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn__fake {
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin-right: 4px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #d9d9d9;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn__fake::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #212121;
+    content: "";
+    opacity: 0;
+    transition: 2s;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn__fake_active {
+    background-color: #212121;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn__radio:checked + .btn__fake::before {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=btn.css.map */

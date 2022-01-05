@@ -1,0 +1,18 @@
+@mixin base($w, $bg, $fl, $r) {
+  background: $bg;
+  display: $fl;
+
+  @if $w != 0 {
+    max-width: $w;
+  }
+
+  @if $r != 0 {
+    border-radius: $r;
+  }
+}
+@mixin font($sty, $wei, $size, $li) {
+  font-style: $sty;
+  font-weight: $wei;
+  font-size: $size;
+  line-height: $li;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Каляка</title>
+  </head>
+  <body class="page">
+    <!-- шапка сайта -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo"></div>
+        <h1 class="header__heading">Не умеете рисовать? Не беда!</h1>
+        <p class="header__text">
+          С помощью нашего приложения вы можете чиркануть каляку и получить
+          шедевр.
+        </p>
+        <img
+          class="header__pic"
+          src="./image/header-pic.png"
+          alt="Каляка в телефоне"
+        />
+        <button type="button" class="header__button">Подробнее</button>
+      </div>
+    </header>
+    <!-- главный контент сайта -->
+    <main class="main">
+      <section class="card">
+        <div class="card__container">
+          <div class="card__slider">
+            <article class="card__cell">
+              <p class="card__small-title">AI</p>
+              <h3 class="card__heading">Умный интелект приложения</h3>
+              <p class="card__text">
+                Рисуйте в приложении доступными кистями: карандаш, маркер,
+                линер, масляная кисть и многие другие...
+              </p>
+            </article>
+            <article class="card__cell card__type_disappeared">
+              <p class="card__small-title">Ч/Б и Цвет</p>
+              <h3 class="card__heading">Рисуйте в любом стиле</h3>
+              <p class="card__text">
+                Будь то карандашная каляка-маляка или цветное произведение,
+                приложение поможет в любой ситуации.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="btn">
+          <label class="btn__label">
+            <input
+              type="radio"
+              class="btn__radio"
+              id="cards-left"
+              name="cards"
+            />
+            <span class="btn__fake btn__fake_active"></span>
+          </label>
+          <label class="btn__label">
+            <input
+              type="radio"
+              class="btn__radio"
+              id="cards-right"
+              name="cards"
+            />
+            <span class="btn__fake"></span>
+          </label>
+        </div>
+      </section>
+      <section class="title">
+        <h2 class="title__heading">
+          Чик-чирик и ваша каляка превращается в изумительное произведение
+          искусства.
+        </h2>
+      </section>
+      <!--  изображения  -->
+      <section class="image">
+        <div class="image__carusel">
+          <ul class="image__list">
+            <li class="image__drawing">
+              <img
+                class="image__photo"
+                src="./image/face-one.png"
+                alt="каляка"
+              />
+            </li>
+            <li class="image__drawing image__type_disap-draw">
+              <img
+                class="image__photo"
+                src="./image/face-two.png"
+                alt="рисунок"
+              />
+            </li>
+            <li class="image__drawing image__type_disap-portrait">
+              <img
+                class="image__photo"
+                src="./image/face-tree.png"
+                alt="портрет"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="btn">
+          <label class="btn__label">
+            <input type="radio" class="btn__radio" id="img-left" name="image" />
+            <span class="btn__fake btn__fake_active"></span>
+          </label>
+          <label class="btn__label">
+            <input
+              type="radio"
+              class="btn__radio"
+              id="img-right"
+              name="image"
+            />
+            <span class="btn__fake"></span>
+          </label>
+        </div>
+      </section>
+      <!--  карточки -->
+      <section class="card">
+        <div class="card__container">
+          <div class="card__carusel">
+            <article class="card__cell">
+              <p class="card__small-title">Быстро</p>
+              <h3 class="card__heading">Проблем с рисованием — нет</h3>
+              <p class="card__text">
+                Рисуйте в приложении доступными кистями: карандаш, маркер,
+                линер, масляная кисть и многие другие...
+              </p>
+            </article>
+            <article class="card__cell card__type_disappeared">
+              <p class="card__small-title">Просто</p>
+              <h3 class="card__heading">
+                Нарисовали, преобразовали, сохранили
+              </h3>
+              <p class="card__text">
+                Раз, два, три, больше нечего тут рассказать.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="btn">
+          <label class="btn__label">
+            <input type="radio" class="btn__radio" id="card-left" name="card" />
+            <span class="btn__fake btn__fake_active"></span>
+          </label>
+          <label class="btn__label">
+            <input
+              type="radio"
+              class="btn__radio"
+              id="card-right"
+              name="card"
+            />
+            <span class="btn__fake"></span>
+          </label>
+        </div>
+      </section>
+      <section class="title">
+        <h2 class="title__heading">
+          Качайте приложение и улучшайте свои художества, а потом хвастайтесь
+          ими!
+        </h2>
+      </section>
+      <section class="info">
+        <h3 class="info__heading">Хотите нам что-то посоветовать?</h3>
+        <p class="info__text">Оставьте заявку и мы свяжемся с вами.</p>
+        <form
+          class="info__contact"
+          action="index.html"
+          method="post"
+          name="info"
+          id="form"
+        >
+          <input
+            type="text"
+            class="info__line"
+            id="name"
+            name="name"
+            placeholder="Ваше Имя"
+            required
+          />
+          <input
+            type="text"
+            class="info__line"
+            id="email"
+            name="email"
+            placeholder="Контактный Email"
+            required
+          />
+
+          <textarea
+            class="info__message"
+            id="message"
+            name="message"
+            placeholder="Сообщение"
+            required
+          ></textarea>
+        </form>
+        <button type="submit" class="info__button">Оставить заявку</button>
+      </section>
+    </main>
+    <!--  подвал сайта  -->
+    <footer class="footer">
+      <div class="footer__shell">
+        <h3 class="footer__heading">Хотите скачать приложение?</h3>
+        <p class="footer__text">Качайте в ЭпСтор и ГуглПлэй.</p>
+        <button type="button" class="footer__button">Уже скоро!</button>
+      </div>
+      <div class="footer__lower-container">
+        <img class="footer__pic" src="./image/footer-like.png" alt="лайк" />
+      </div>
+    </footer>
+    <!-- JavaScript подключение -->
+    <script src="pages/index.js"></script>
+  </body>
+</html>

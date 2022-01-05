@@ -1,0 +1,208 @@
+.header {
+  @include base(1420px, #222222, flex, 20px);
+  position: relative;
+  justify-content: space-between;
+  margin: 10px auto 60px auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin: 10px auto 70px auto;
+  }
+
+  @media screen and (max-width: 630px) {
+    position: static;
+    justify-content: center;
+  }
+
+  &__logo {
+    background-image: url(../image/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+
+    @media screen and (max-width: 630px) {
+      align-self: flex-start;
+    }
+  }
+
+  &__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 0px 160px;
+
+    @media screen and (max-width: 1270px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: 1150px) {
+      margin-left: 100px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin-left: 80px;
+      width: 45%;
+    }
+
+    @media screen and (max-width: 890px) {
+      margin-left: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 30px 0px 0px 50px;
+      width: 48%;
+    }
+    @media screen and (max-width: 720px) {
+      width: 40%;
+      margin-left: 40px;
+    }
+
+    @media screen and (max-width: 630px) {
+      margin: 20px 20px 0px 20px;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 440px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 340px) {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    color: #ffffff;
+    margin: 60px 0px 28px 0px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+      line-height: 37px;
+      margin: 50px 0px 20px 0px;
+    }
+    @media screen and (max-width: 630px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  &__text {
+    max-width: 450px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    @media screen and (max-width: 630px) {
+      font-size: 12px;
+      margin-bottom: 50px;
+    }
+  }
+  &__button {
+    width: 240px;
+    height: 54px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+    margin: 108px 0px 130px 0px;
+
+    @media screen and (max-width: 768px) {
+      width: 240px;
+      height: 48px;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 250px 0px 50px 0px;
+    }
+    @media screen and (max-width: 630px) {
+      width: 260px;
+      height: 44px;
+      font-size: 12px;
+      margin: 50px 0px 20px 0px;
+    }
+  }
+  &__button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  &__pic {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 3;
+    width: 311px;
+    height: 630px;
+    filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    margin: 40px 220px 0px 0px;
+    object-fit: cover;
+
+    @media screen and (max-width: 1415px) {
+      margin-right: 160px;
+    }
+
+    @media screen and (max-width: 1269px) {
+      top: 70px;
+    }
+
+    @media screen and (max-width: 1150px) {
+      margin-right: 120px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin-right: 100px;
+    }
+    @media screen and (max-width: 985px) {
+      margin-right: 70px;
+    }
+    @media screen and (max-width: 890px) {
+      top: 100px;
+      margin-right: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 250px;
+      height: 502px;
+      margin: 120px 45px 0px 0px;
+      top: 10px;
+    }
+
+    @media screen and (max-width: 720px) {
+      top: 60px;
+    }
+
+    @media screen and (max-width: 630px) {
+      position: relative;
+      width: 260px;
+      height: 522px;
+      top: 0;
+      right: 0;
+      margin: 0;
+    }
+  }
+}

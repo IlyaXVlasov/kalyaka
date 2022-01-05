@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  justify-content: center;
+  max-width: 1103px;
+  margin: 120px auto 120px auto;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 648px;
+    margin: 70px 60px 70px 60px;
+  }
+
+  @media screen and (max-width: 320px) {
+    max-width: 260px;
+    margin: 94px auto 70px auto;
+  }
+  &__heading {
+    @include font(normal, 600, 60px, 69px);
+    color: #111111;
+    margin: 0;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 33px;
+      line-height: 37px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 26px;
+      line-height: 31px;
+      padding-left: 10px;
+    }
+  }
+}
